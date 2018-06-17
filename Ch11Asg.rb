@@ -42,7 +42,7 @@ class Question
   # this is how the program sets the answer; it checks against the choices stored in this class and sets to the appropriate one
   def setUserAnswer(chosen_indicator)
     @choices.each do |choice|
-      if chosen_indicator === choice.indicator
+      if chosen_indicator.match(choice.indicator)
         @user_answer = choice
       end
     end
@@ -129,7 +129,8 @@ def quiz(question_text_template)
     question = Question.new("#{question_text_template} #{key} syllables?\n", choices, correct_answer[0])
     question.printText # prints the context for the prompt
     # you can set chosen_indicator to a letter of your choice to test (instead of being prompted 10 times)
-    chosen_indicator = "A" #prompt "What's your choice? "
+    chosen_indicator = prompt "What's your choice? "
+    puts "\n"
     question.setUserAnswer(chosen_indicator)
     question.checkUserAnswer
     questions << question
