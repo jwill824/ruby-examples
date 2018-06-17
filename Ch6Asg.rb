@@ -1,14 +1,5 @@
 #!/usr/bin/ruby -w
 
-=begin
-Developer Name:    Hannah Mulkey
-Date:              05/20/2018
-Assignment Number: Chapter 6
-Course Number:     CIS 116
-Instructor:        Mr.
-Program Summary:
-=end
-
 Inf = 1.0/0 # declare Infinity to use for range
 
 def day_prompt(*args)

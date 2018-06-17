@@ -1,14 +1,5 @@
 #!/usr/bin/ruby -w
 
-=begin
-Program Title:     Book Order Total Cost Calculator
-Developer Name:    Hannah Mulkey
-Date:              05/20/2018
-Course/Instructor: CIS 116 Computer Programming I
-Program Summary:   Calculates grand total of a customer book order, including
-                   shipping and discount rates.
-=end
-
 Inf = 1.0/0 # declare Infinity to use in switch/case
 
 def prompt(*args)
