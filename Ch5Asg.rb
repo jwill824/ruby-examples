@@ -4,8 +4,8 @@ def prompt(*args)
   input_arg=false
   until input_arg do # quits when input_arg=true
     print(*args) # prints the input which prompts the user visually
-    value=Integer(gets) # converts inputted arg as Float
-    input_arg = value rescue false # checks if input is Float, otherwise continues to prompt
+    value=Integer(gets) # converts inputted arg as Integer
+    input_arg = value rescue false # checks if input is Integer, otherwise continues to prompt
     if (0..30) === value
       input_arg=true
     else
