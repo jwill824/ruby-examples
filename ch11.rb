@@ -129,7 +129,7 @@ def quiz(question_text_template)
     question = Question.new("#{question_text_template} #{key} syllables?\n", choices, correct_answer[0])
     question.printText # prints the context for the prompt
     # you can set chosen_indicator to a letter of your choice to test (instead of being prompted 10 times)
-    chosen_indicator = "C"#prompt "What's your choice? "
+    chosen_indicator = prompt "What's your choice? "
     puts "\n"
     question.setUserAnswer(chosen_indicator)
     question.checkUserAnswer

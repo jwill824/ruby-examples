@@ -1,1 +1,1 @@
-Teaching myself ruby
+[Computer Science Programming Basics in Ruby](https://www.oreilly.com/library/view/computer-science-programming/9781449356835/)
